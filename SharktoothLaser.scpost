@@ -102,7 +102,7 @@ end
 function OnNewOperation()
    post.Text (" (Operation: ", operationName, ")\n")
    post.Text ("#4  = ")
-   post.Number (feedRate, "0.00##")
+   post.Number (feedRate * scale, "0.00##")
    post.Text (" (Feed rate units/min)\n")
 
 end
